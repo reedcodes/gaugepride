@@ -1,0 +1,64 @@
+@import 'compass/css3';
+
+
+
+$brand: #7023b7;
+
+$text-light: white;
+$text-dark: black;
+
+
+
+body {
+    max-width: 1192px;
+    margin: 0 1rem;
+    padding: 0;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.brand {
+    color: $brand;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Lobster', cursive, Georgia, serif;
+}
+
+.subtitle {
+    margin-top: -1rem;
+    border-top-width: 0.25rem;
+    border-top-style: solid;
+    border-top-color: $brand;
+}
+
+.button {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    display: inline-block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    padding-top: 0.25rem;
+    padding-right: 1rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    background-color: $brand;
+    color: $text-light;
+    font-weight: bold;
+    text-decoration: none;
+    
+    &:hover {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        background-color: lighten( $brand, 10% );
+    }
+}

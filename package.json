@@ -1,0 +1,10 @@
+{
+  "name": "Gauge Pride",
+  "main": "gulpfile.js"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0"
+  }
+}
