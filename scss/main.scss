@@ -26,7 +26,7 @@ a {
     transition-timing-function: ease;
     color: $brand;
     &:hover {
-        background-color: lighten( $brand, 75% );
+        color: darken( $brand, 25% );
     }
 }
 
@@ -87,17 +87,25 @@ a {
     }
 }
 
-.icons {
+.social {
     display: flex;
     align-items: flex-start;
     align-content: flex-start;
     list-style: none;
-    margin-right: -0.25rem;
-    margin-left: -0.25rem;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
     padding-left: 0;
     
     li {
-        margin-right: 0.25rem;
-        margin-left: 0.25rem;
+        padding-right: 0.5rem;
+        padding-left: 0.55rem;
+        border-left-width: 0.125rem;
+        border-left-style: solid;
+        border-left-color: $brand;
+        
+        &:first-child {
+            border-left: 0;
+        }
+        
     }
 }
