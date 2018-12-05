@@ -25,9 +25,12 @@ a {
     transition-duration: 0.5s;
     transition-timing-function: ease;
     color: $brand;
-    &:hover {
+    
+    &:hover,
+    &:focus {
         color: darken( $brand, 25% );
     }
+    
 }
 
 
@@ -78,7 +81,8 @@ a {
     font-weight: bold;
     text-decoration: none;
     
-    &:hover {
+    &:hover,
+    &:focus {
         margin-top: 0;
         margin-bottom: 0;
         padding-top: 0.5rem;
