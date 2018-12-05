@@ -1,5 +1,4 @@
 const gulp = require( 'gulp' ),
-    concat = require( 'gulp-concat' ),
     compass = require( 'gulp-compass' );
 
 function compassBuild() {

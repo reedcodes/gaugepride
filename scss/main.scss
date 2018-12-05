@@ -20,6 +20,31 @@ body {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
+a {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    color: $brand;
+    &:hover {
+        background-color: lighten( $brand, 75% );
+    }
+}
+
+
+
+.sr {
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+
+
 .brand {
     color: $brand;
 }
@@ -37,10 +62,9 @@ body {
     border-top-color: $brand;
 }
 
+
+
 .button {
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
     display: inline-block;
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
@@ -60,5 +84,20 @@ body {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
         background-color: lighten( $brand, 10% );
+    }
+}
+
+.icons {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    list-style: none;
+    margin-right: -0.25rem;
+    margin-left: -0.25rem;
+    padding-left: 0;
+    
+    li {
+        margin-right: 0.25rem;
+        margin-left: 0.25rem;
     }
 }
